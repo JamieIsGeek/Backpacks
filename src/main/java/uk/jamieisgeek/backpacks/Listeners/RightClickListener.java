@@ -10,6 +10,10 @@ import uk.jamieisgeek.backpacks.GUIManager;
 
 public class RightClickListener implements Listener {
     private final GUIManager guiManager;
+
+    /**
+     * @param guiManager The GUIManager instance
+     */
     public RightClickListener(GUIManager guiManager) {
         this.guiManager = guiManager;
     }

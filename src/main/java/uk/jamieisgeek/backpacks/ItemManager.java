@@ -14,10 +14,16 @@ public class ItemManager {
         this.plugin = plugin;
     }
 
+    /**
+     * @param player The player who will receive the backpack
+     */
     public void Give(Player player) {
         player.getInventory().addItem(makeBackpack());
     }
 
+    /**
+     * @return The backpack item
+     */
     private ItemStack makeBackpack() {
         ItemStack backpack = new ItemStack(Material.BLAZE_POWDER, 1);
         backpack.setItemMeta(setMeta(backpack));
@@ -25,6 +31,10 @@ public class ItemManager {
         return backpack;
     }
 
+    /**
+     * @param backpack The backpack item
+     * @return The backpack item meta
+     */
     private ItemMeta setMeta(ItemStack backpack) {
         ItemMeta meta = backpack.getItemMeta();
         meta.setDisplayName(ChatColor.GOLD + "Backpack");
@@ -34,6 +44,9 @@ public class ItemManager {
         return meta;
     }
 
+    /**
+     * @return A random number between 0 and 999999999 to make the item unique
+     */
     private Integer getRandomNumber() {
         return (int) (Math.random() * 999999999);
     }

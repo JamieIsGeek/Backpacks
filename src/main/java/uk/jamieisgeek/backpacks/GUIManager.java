@@ -11,6 +11,10 @@ public class GUIManager {
         this.plugin = plugin;
     }
 
+    /**
+     * @param player The player who opened the backpack
+     * @param backpack The backpack item
+     */
     public void openGUI(Player player, ItemStack backpack) {
         Inventory gui = plugin.getServer().createInventory(null, 27, ChatColor.GOLD + "Backpack");
         player.openInventory(gui);
