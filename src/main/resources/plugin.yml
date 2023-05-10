@@ -2,3 +2,8 @@ name: Backpacks
 version: '${project.version}'
 main: uk.jamieisgeek.backpacks.Backpacks
 api-version: 1.19
+commands:
+  givebackpack:
+    description: Give a player a backpack
+    usage: /<command> <player>
+    permission: backpacks.give
