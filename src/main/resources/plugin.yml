@@ -1,0 +1,4 @@
+name: Backpacks
+version: '${project.version}'
+main: uk.jamieisgeek.backpacks.Backpacks
+api-version: 1.19
